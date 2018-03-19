@@ -1,0 +1,51 @@
+<main id="manageAccount" style="display: none" class="container">
+  <div class="container page page1">
+      <h1>Manage Account</h1>
+
+      <form role="form" id="manageForm">
+        <div class="form-group">
+          <label for="manageUserName">Username:</label>
+          <input type="text" class="form-control" id="manageUsername" required>
+        </div>
+        <div class="form-group">
+          <label for="manageName">Name:</label>
+          <input type="text" class="form-control" id="manageName" required>
+        </div>
+        <div class="form-group">
+          <label for="manageEmail">Email Address:</label>
+          <input type="email" class="form-control" id="manageEmail" placeholder="myemail@email.com" required>
+        </div>
+        
+        <button type="button" id="manageSubmitButton" class="btn btn-default">Confirm Changes</button>
+        <button type="button" name="reset" id="resetButton" class="btn btn-success" data-toggle="modal" data-target="#resetModal">Reset Password</button>    
+
+      </form>
+
+      <div id="resetModal" class="modal fade" role="dialog">  
+        <div class="modal-dialog">  
+      <!-- Modal content-->  
+             <div class="modal-content">  
+                  <div class="modal-header">
+                      <h5 class="modal-title">Password Reset</h5>  
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>  
+                         
+                  </div>  
+                  <div class="modal-body"> 
+                      <label>Current Password</label>  
+                      <input type="password" name="currentPassword" id="currentPassword" class="form-control" />  
+                      <br />  
+                       <label>New Password</label>  
+                       <input type="password" name="newPassword" id="newPassword" class="form-control" />  
+                       <br />  
+                       <label>Confirm New Password</label>  
+                       <input type="password" name="confirmNewPassword" id="confirmNewPassword" class="form-control" />  
+                       <br />  
+                       <button type="button" name="passwordUpdateButton" id="passwordUpdateButton" class="btn btn-warning">Confirm Password Change</button>  
+                  </div>  
+             </div>  
+        </div>  
+   </div>  
+
+
+  </div>
+</main>

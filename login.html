@@ -1,0 +1,26 @@
+<main id="login" style="display: none" class="container">
+	<div class="container page page1">
+		<h1>Log in</h1>
+		
+		<p>Enter your username or email, and password to login</p>
+		
+			<form role="form" id="loginForm">
+					<div class="form-group">
+						<label for=loginUsername">Username:</label>
+						<input type="text" placeholder="Enter username or email" class="form-control" id="loginUsername" required>
+					</div>
+					<div class="form-group">
+						<label for="loginPassword">Password:</label>
+						<input type="password" class="form-control" id="loginPassword" 
+									placeholder="Enter password" required>
+					</div>
+					<div class="form-check">
+						<input type="checkbox" class="form-check-input" id="rememberMe">
+						<label for="loginCheckbox">Remember me</label>
+					</div>
+					<button type="button" id="loginButton" class="btn btn-default">Login</button>
+			</form>
+		  
+			<p id = "loginPageSignUpLink"><a href="#signup">Sign Up</a> if you do not have an account</p>	
+	</div>
+</main>
